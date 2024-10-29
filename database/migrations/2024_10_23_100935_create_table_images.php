@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('src');
+            $table->string('type');
+            $table->string('duration')->nullable();
+            $table->string('size')->nullable();
             $table->string('alt')->nullable();
             $table->timestamps();
         });
